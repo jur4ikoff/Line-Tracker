@@ -95,7 +95,7 @@ void count_lines(int num_files, ...) {
     va_end(files);
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char **argv) {
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <file1> <file2> ... <fileN>\n", argv[0]);
         return 1;
